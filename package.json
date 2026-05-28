@@ -35,14 +35,14 @@
   "dependencies": {
     "lucide-react": "0.468.0",
     "pg": "8.21.0",
-    "react": "18.3.1",
+    "react": "19.2.6",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20260527.1",
     "@types/node": "20.19.41",
     "@types/pg": "8.11.6",
-    "@types/react": "18.3.3",
+    "@types/react": "19.2.15",
     "@types/react-dom": "18.3.0",
     "@vitejs/plugin-react": "5.1.2",
     "tsx": "4.20.6",
