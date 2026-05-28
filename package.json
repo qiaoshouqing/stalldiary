@@ -1,0 +1,56 @@
+{
+  "name": "stalldiary",
+  "version": "0.1.0",
+  "description": "A multilingual promotion diary for independent builders.",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qiaoshouqing/stalldiary.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qiaoshouqing/stalldiary/issues"
+  },
+  "homepage": "https://github.com/qiaoshouqing/stalldiary#readme",
+  "keywords": [
+    "promotion",
+    "diary",
+    "indie-hacker",
+    "react",
+    "cloudflare-workers",
+    "postgres"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 3000",
+    "build": "vite build",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "entry:add": "node --env-file=.env.local --import tsx scripts/add-entry.ts",
+    "db:migrate": "node --env-file=.env.local scripts/migrate.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "0.577.0",
+    "pg": "8.21.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20260528.1",
+    "@types/node": "20.19.41",
+    "@types/pg": "8.20.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "5.2.0",
+    "tsx": "4.22.3",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.3",
+    "wrangler": "4.95.0"
+  },
+  "overrides": {
+    "postcss": "8.5.10"
+  }
+}
